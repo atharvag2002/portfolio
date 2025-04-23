@@ -1,0 +1,40 @@
+/* FallingLeaves.css */
+@keyframes fall {
+  0% {
+    top: -50px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 90vh; /* Leaves disappear before reaching the bottom */
+    transform: rotate(360deg);
+    opacity: 0; /* Fade out before reaching the bottom */
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+.leaf {
+  width: 20px;
+  height: 30px;
+  background-color: #f97316; /* Orange color */
+  border-radius: 50%;
+  animation: fall linear infinite, sway ease-in-out infinite;
+}
+
+.leaf:nth-child(odd) {
+  background-color: #facc15; /* Yellow for odd leaves */
+}
+
+.leaf:nth-child(even) {
+  background-color: #0a5c36; /* Green for even leaves */
+}
