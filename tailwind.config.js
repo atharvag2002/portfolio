@@ -9,13 +9,16 @@ module.exports = {
 
       
       colors: {
-        primary: "#f97316",        // orange
-        background: "#0a5c36",     // dark green
+        primary: "#1D1D1D ",        // grey
+        background: "#581845 ",     // purple
         textLight: "#f1f5f9",      // light grey
-        accent: "#facc15",  
-        offwhite: "#f1f3f5"      // yellow
+        accent: "#facc15",  // yellow 
+        offwhite: "#f1f3f5" ,     
+        offftext : "#fdf6e3",
+        navyellow:"#2C3539",
+        offyellow : "#b2a89f"  //grey shade of button
 
-        
+       
       },
     },
   },
