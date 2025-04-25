@@ -19,8 +19,12 @@ module.exports = {
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
         rajdhani: ['Rajdhani', 'sans-serif'],
+        logo: ['"lobster"', 'rajdhani'],
+        
       },
     },
   },
   plugins: [],
+
+  
 };

@@ -10,7 +10,7 @@ const Navbar = () => {
 <div className="max-w-screen-xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="text-2xl font-bold text-[#f97316]">MyLogo</a>
+          <a href="/" className="text-2xl font-logo text-[#f97316]">Atharva</a>
 
           {/* Desktop Navbar */}
           <div className="hidden md:flex space-x-6">

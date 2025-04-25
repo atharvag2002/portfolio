@@ -68,7 +68,7 @@ const Hero = () => {
 
         </h1>
 
-        {/* "I am into..." part and scrolling skills */}
+       
         {/* Scroll Text in one line */}
 <div className="text-xl sm:text-xl md:text-2xl text-textLight mt-6 mb-10 flex items-center gap-9 flex-wrap  font-bold font-rajdhani">
   <span>I am  into</span>
@@ -79,8 +79,8 @@ const Hero = () => {
 
     {/* 🔁 Scrolling Skills */}
     <ul className="animate-scrollText h-full flex flex-col items-center text-accent font-semibold text-xl sm:text-2xl font-poppins">
-      {["Front End Development", "Back End Development", "Data Analytics"].map((item, i) => (
-        <li key={i} className="h-10 sm:h-12 flex items-center justify-center">{item}</li>
+      {["","Front End Development", "Back End Development", "Data Analytics"].map((item, i) => (
+        <li key={i} className="h-10 sm:h-12 flex items-center justify-center tracking-tight ">{item}</li>
       ))}
     </ul>
   </div>
