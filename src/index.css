@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -32,3 +31,33 @@ code {
   animation: flicker 2s infinite;
 }
 
+@keyframes scrollText {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-100%); }
+  40% { transform: translateY(-200%); }
+  60% { transform: translateY(-300%); }
+  80% { transform: translateY(-200%); }
+  100% { transform: translateY(0); }
+}
+
+.animate-scrollText {
+  animation: scrollText 10s ease-in-out infinite;
+}
+
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.waving-hand {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2s infinite;
+}
