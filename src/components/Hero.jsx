@@ -2,10 +2,51 @@ import React from 'react';
 import profile from '../assets/profile.png';
 import '../index.css'; // scroll animation styles
 
+import java from '../assets/icons/java.svg';
+import javascript from '../assets/icons/javascript.svg';
+import vscode from '../assets/icons/vscode.svg';
+import tailwind from '../assets/icons/tailwind.svg';
+import tableau from '../assets/icons/tableau.svg';
+import sql from '../assets/icons/sql.svg';
+import springboot from '../assets/icons/springboot.svg';
+import php from '../assets/icons/php.svg';
+import linux from '../assets/icons/linux.svg';
+import github from '../assets/icons/github.svg';
+import database from '../assets/icons/database.svg';
+
+
+
+
+
 const Hero = () => {
   return (
     <section className="relative bg-background text-textLight min-h-screen flex flex-col md:flex-row items-center justify-center px-4 sm:px-8 overflow-hidden">
-      {/* Vertical color plane */}
+      
+       {/* bg icons */}
+       
+ {/* Background floating icons */}
+<div className="absolute inset-0 pointer-events-none z-0 flex justify-center items-center opacity-70 ">
+  <img src={java} alt="java" className="w-8 sm:w-12 opacity-60 absolute top-[10%] left-[15%] " />
+  <img src={vscode} alt="vscode" className="w-8 sm:w-12 opacity-60 absolute top-[15%] right-[10%]" />
+  <img src={tailwind} alt="tailwind" className="w-8 sm:w-12 opacity-60 absolute bottom-[10%] left-[25%] " />
+  <img src={tableau} alt="tableau" className="w-8 sm:w-12 opacity-65 absolute top-[30%] left-[40%] " />
+  <img src={sql} alt="sql" className="w-8 sm:w-12 opacity-60 absolute bottom-[20%] right-[5%] " />
+  <img src={springboot} alt="springboot" className="w-8 sm:w-12 opacity-60 absolute top-[45%] right-[15%] " />
+  <img src={php} alt="php" className="w-8 sm:w-12 opacity-60 absolute bottom-[10%] left-[40%] " />
+  <img src={linux} alt="linux" className="w-8 sm:w-12 opacity-62 absolute top-[55%] left-[35%] " />
+  <img src={github} alt="github" className="w-8 sm:w-12 opacity-60 absolute top-[20%] left-[70%] " />
+  <img src={database} alt="database" className="w-8 sm:w-12 opacity-60 absolute bottom-[10%] right-[25%] " />
+  <img src={javascript} alt="javascript" className="w-8 sm:w-12 opacity-40 absolute top-[15%] left-[25%] " />
+</div>
+
+
+
+
+
+
+
+
+       {/* Vertical color plane */}
       <div className="absolute top-0 left-0 h-full w-1/5 bg-primary sm:w-1/5 md:w-1/5 lg:w-1/5"></div>
 
       {/* Profile Picture */}
