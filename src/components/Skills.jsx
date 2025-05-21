@@ -12,8 +12,6 @@ import php from '../assets/php.svg';
 import tableau from '../assets/tableau.svg';
 import boot from '../assets/boot.svg';
 
-
-
 // ✅ Skills array using imported images
 const skills = [
   { name: 'JavaScript', image: javascript },
@@ -25,30 +23,30 @@ const skills = [
   { name: 'Java', image: java },
   { name: 'PHP', image: php },
   { name: 'Tableau', image: tableau },
-  { name: 'Spring Boot', image:boot }
+  { name: 'Spring Boot', image: boot }
 ];
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-[#f1f5f9] py-20 px-10">
+    <section id="skills" className="bg-[#f1f5f9] py-20 px-4 sm:px-8 md:px-10">
       <h2 className="text-4xl font-bold text-primary mb-10 text-center">Skills</h2>
     
-    <div className=" border border-grey-300 bg-white shadow-lg rounded-2xl p-20" >
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
-        {skills.map((skill, index) => (
-          <div 
-            key={index}
-            className="bg-yellow-50 border border-black text-primary shadow-md rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300"
-          >
-            <img 
-              src={skill.image} 
-              alt={skill.name} 
-              className="w-12 h-12 object-contain mb-3 "
-            />
-            <p className="text-lg font-medium">{skill.name}</p>
-          </div>
-        ))}
-      </div>
+      <div className="border border-grey-300 bg-white shadow-lg rounded-2xl p-4 sm:p-6 md:p-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+          {skills.map((skill, index) => (
+            <div 
+              key={index}
+              className="bg-yellow-50 border border-black text-primary shadow-md rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300"
+            >
+              <img 
+                src={skill.image} 
+                alt={skill.name} 
+                className="w-12 h-12 object-contain mb-3"
+              />
+              <p className="text-lg font-medium">{skill.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

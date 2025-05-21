@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Projects from'./components/projects';
 import Skills from './components/Skills';
 import Footer from './components/footer';
+import About from './components/About'; 
+import Tableau from './components/tableau';
 
 
 
@@ -14,8 +16,11 @@ function App() {
       <Navbar />
       <Hero />
       <Projects />
+      <Tableau/>
       <Skills />
+      <About />
       <Footer />
+      
       
     </div>
   );

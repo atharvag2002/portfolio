@@ -1,5 +1,5 @@
 import React from 'react';
-import PROJECT1 from '../assets/PROJECT1.jpg';
+import PROJECT1 from '../assets/GBUDDY.png';
 import PROJECT2 from '../assets/PROJECT2.jpg';
 import PROJECT3 from '../assets/PROJECT3.jpg';
 
@@ -10,8 +10,8 @@ const Projects = () => {
       title: "Gym Management System",
       img: PROJECT1,
       desc: "A PHP-based gym management system with user tracking and activity management.",
-      link: "#",
-      demo: "#"
+      link: "https://github.com/atharvag2002/Gbuddy-php/tree/main",
+      demo: "https://www.linkedin.com/posts/atharva-gaikwad-5b650427b_webdevelopment-gymmanagement-techinnovation-activity-7199407851918757888-HqzI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQ9iloBB2MWYqSKp_n9LcBojmveHQZtwDo"
     },
     {
       id: 2,
@@ -28,7 +28,9 @@ const Projects = () => {
       desc: "React weather app fetching live data using API integration and clean UI.",
       link: "#",
       demo: "#"
-    }
+    },
+    
+    
   ];
 
   return (
@@ -46,8 +48,8 @@ const Projects = () => {
             <div className="p-6">
               <h3 className="text-2xl text-primary font-semibold mb-3">{project.title}</h3>
               <p className="text-black mb-5">{project.desc}</p>
-              <a href={project.link} target="_blank" rel="noreferrer" className="text-sm bg-primary text-white px-4 py-2 rounded-xl hover:scale-105 transition duration-300 inline-block  ">View Project</a>
-              <a href={project.demo} target="_blank" rel="noreferrer" className="text-sm bg-grey-100 text-primary rounded-xl px-7 py-2 hover:scale-95 transition duration-300  border border-black  float-right  inline-block" >  <span>&lt;Code&gt;</span></a>
+              <a href={project.demo} target="_blank" rel="noreferrer" className="text-sm bg-primary text-white px-4 py-2 rounded-xl hover:scale-105 transition duration-300 inline-block  ">View Project</a>
+              <a href={project.link} target="_blank" rel="noreferrer" className="text-sm bg-grey-100 text-primary rounded-xl px-7 py-2 hover:scale-95 transition duration-300  border border-black  float-right  inline-block" >  <span>&lt;Code&gt;</span></a>
             </div>
           </div>
         ))}
@@ -55,5 +57,6 @@ const Projects = () => {
     </section>
   );
 };
+
 
 export default Projects;

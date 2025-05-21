@@ -61,3 +61,7 @@ code {
   transform-origin: 70% 70%;
   animation: wave 2s infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}

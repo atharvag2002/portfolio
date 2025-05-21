@@ -15,18 +15,13 @@ const Navbar = () => {
           {/* Desktop Navbar */}
           <div className="hidden md:flex space-x-6">
             <a href="#home" className="hover:text-[#f97316]">Home</a>
-            <a href="#services" className="hover:text-[#f97316]">Services</a>
+            <a href="#projects" className="hover:text-[#f97316]">Projects</a>
+            <a href="#skills" className="hover:text-[#f97316]">Skills</a>
             <a href="#about" className="hover:text-[#f97316]">About</a>
             <a href="#contact" className="hover:text-[#f97316]">Contact</a>
 
             {/* Dropdown */}
-            <div className="relative">
-              <button className="hover:text-[#f97316]">More</button>
-              <div className="absolute hidden bg-[#0a5c36] text-[#f1f5f9] shadow-md group-hover:block mt-1 rounded-md w-40">
-                <a href="#blog" className="block px-4 py-2">Blog</a>
-                <a href="#faq" className="block px-4 py-2">FAQ</a>
-              </div>
-            </div>
+           
           </div>
 
           {/* Mobile Navbar */}
@@ -41,11 +36,11 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-[#0a5c36] text-[#f1f5f9] space-y-4 py-4">
             <a href="#home" className="block text-center">Home</a>
-            <a href="#services" className="block text-center">Services</a>
+            <a href="#projects" className="block text-center">Projects</a>
+            <a href="#skills" className="block text-center">Skills</a>
             <a href="#about" className="block text-center">About</a>
             <a href="#contact" className="block text-center">Contact</a>
-            <a href="#blog" className="block text-center">Blog</a>
-            <a href="#faq" className="block text-center">FAQ</a>
+            
           </div>
         )}
       </div>
