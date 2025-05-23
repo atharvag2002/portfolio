@@ -75,7 +75,7 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start">
             <a download
-              href="/portfolio/public/mca.pdf"
+              href="/mca.pdf"
               className="bg-offyellow text-background px-6 py-3 rounded-2xl text-lg font-medium shadow-md hover:scale-105 transition duration-300"
             >
               Download Resume
