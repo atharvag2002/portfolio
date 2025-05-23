@@ -74,13 +74,13 @@ const Tableau = () => {
       </p>
 
       {/* Responsive flex container to center Tableau dashboard */}
-      <div className="w-full flex justify-center overflow-x-auto">
-        <div
-          ref={containerRef}
-          className="mx-auto"
-          style={{ minWidth: 320, display: "flex", justifyContent: "center" }}
-        />
-      </div>
+     <div className="w-full flex justify-center overflow-x-scroll overflow-y-scroll min-h-[400px] min-w-[350px] sm:overflow-x-auto sm:overflow-y-auto">
+  <div
+    ref={containerRef}
+    className="mx-auto"
+    style={{ minWidth: 320, display: "flex", justifyContent: "center" }}
+  />
+</div>
     </div>
   );
 };
