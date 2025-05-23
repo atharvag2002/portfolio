@@ -48,7 +48,7 @@ const Tableau = () => {
         vizElement.style.width = '90vw';
         vizElement.style.height = '600px';
       } else {
-        vizElement.style.width = '1000px'; // full dashboard width
+        vizElement.style.width = '1000px';
         vizElement.style.height = '650px';
       }
 
@@ -73,9 +73,13 @@ const Tableau = () => {
         <span className="text-sm text-gray-500">[If not visible, please refresh the page]</span>
       </p>
 
-      {/* Responsive container: scrollable on small screens */}
-      <div className="w-full overflow-x-auto">
-        <div ref={containerRef} className="mx-auto" />
+      {/* Responsive flex container to center Tableau dashboard */}
+      <div className="w-full flex justify-center overflow-x-auto">
+        <div
+          ref={containerRef}
+          className="mx-auto"
+          style={{ minWidth: 320, display: "flex", justifyContent: "center" }}
+        />
       </div>
     </div>
   );

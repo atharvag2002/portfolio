@@ -1,7 +1,7 @@
 import React from 'react';
 import PROJECT1 from '../assets/GBUDDY.png';
-import PROJECT2 from '../assets/PROJECT2.jpg';
-import PROJECT3 from '../assets/PROJECT3.jpg';
+import PROJECT2 from '../assets/time.png';
+import PROJECT3 from '../assets/weather.jpg';
 
 const Projects = () => {
   const projectData = [
@@ -15,19 +15,19 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "React To-Do App",
+      title: "Timer Crafters",
       img: PROJECT2,
-      desc: "A clean and responsive to-do list app built with React and Tailwind CSS.",
-      link: "#",
-      demo: "#"
+      desc: "A clean and responsive static website built using React and Tailwind CSS.",
+      link: "https://github.com/atharvag2002/timecrafters/",
+      demo: "https://atharvag2002.github.io/timecrafters/"
     },
     {
       id: 3,
       title: "Weather App",
       img: PROJECT3,
       desc: "React weather app fetching live data using API integration and clean UI.",
-      link: "#",
-      demo: "#"
+      link: "https://github.com/atharvag2002/weather",
+      demo: "https://atharvag2002.github.io/weather/"
     },
     
     

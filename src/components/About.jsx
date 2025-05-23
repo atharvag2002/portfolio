@@ -19,40 +19,55 @@ const About = () => {
 
         {/* 🎓 Education Timeline */}
         <h3 className="text-3xl font-semibold text-primary mb-10">My Education</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-          {/* School */}
-          <div className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300">
-            <img 
-              src={schoolImage} 
-              alt="RAMANBAUG SCHOOL" 
-              className="w-28 h-28 rounded-full object-cover mb-4"
-            />
-            <h4 className="text-xl font-bold mb-1">NES Ramanbaug</h4>
-            <p className="text-gray-600 text-sm">10th Grade - 74%<br />Pune</p>
-          </div>
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+  {/* School */}
+  <a
+    href="https://desnesr.edu.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300"
+  >
+    <img 
+      src={schoolImage} 
+      alt="RAMANBAUG SCHOOL" 
+      className="w-28 h-28 rounded-full object-cover mb-4"
+    />
+    <h4 className="text-xl font-bold mb-1">NES Ramanbaug</h4>
+    <p className="text-gray-600 text-sm">10th Grade (SSC) - 74%<br />Pune</p>
+  </a>
 
-          {/* Jr. College */}
-          <div className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300">
-            <img 
-              src={jrCollegeImage} 
-              alt=" PVG Junior College" 
-              className="w-28 h-28 rounded-full object-cover mb-4"
-            />
-            <h4 className="text-xl font-bold mb-1">PVG College</h4>
-            <p className="text-gray-600 text-sm">12th Grade - 57%<br />Pune</p>
-          </div>
+  {/* Jr. College */}
+  <a
+    href="https://www.punevidyarthigriha.org/contact-us/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300"
+  >
+    <img 
+      src={jrCollegeImage} 
+      alt="PVG Junior College" 
+      className="w-28 h-28 rounded-full object-cover mb-4"
+    />
+    <h4 className="text-xl font-bold mb-1">PVG College</h4>
+    <p className="text-gray-600 text-sm">12th Grade (HSC) - 57%<br />Pune</p>
+  </a>
 
-          {/* College */}
-          <div className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300">
-            <img 
-              src={collegeImage} 
-              alt="VCACS" 
-              className="w-28 h-28 rounded-full object-cover mb-4"
-            />
-            <h4 className="text-xl font-bold mb-1">VCACS College</h4>
-            <p className="text-gray-600 text-sm">B.Sc. Computer Science - 8.00 CGPA<br />Pune</p>
-          </div>
-        </div>
+  {/* College */}
+  <a
+    href="https://www.vcacs.ac.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300"
+  >
+    <img 
+      src={collegeImage} 
+      alt="VCACS" 
+      className="w-28 h-28 rounded-full object-cover mb-4"
+    />
+    <h4 className="text-xl font-bold mb-1">VCACS College</h4>
+    <p className="text-gray-600 text-sm">B.Sc. Computer Science - 8.00 CGPA<br />Pune</p>
+  </a>
+</div>
       </div>
     </section>
   );
