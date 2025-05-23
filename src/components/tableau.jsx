@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 const Tableau = () => {
   const containerRef = useRef(null);
 
-  useEffect(() => {
+useEffect(() => {
     // Insert the Tableau embed HTML
     if (containerRef.current && !containerRef.current.innerHTML) {
       containerRef.current.innerHTML = `
@@ -47,9 +47,12 @@ const Tableau = () => {
       } else if (screenWidth >= 768) {
         vizElement.style.width = '90vw';
         vizElement.style.height = '600px';
+      } else if (screenWidth >= 640) {
+        vizElement.style.width = '92vw';
+        vizElement.style.height = '500px';
       } else {
-        vizElement.style.width = '1000px';
-        vizElement.style.height = '650px';
+        vizElement.style.width = '90vw';
+        vizElement.style.height = '400px';
       }
 
       var scriptElement = document.createElement('script');
@@ -62,7 +65,7 @@ const Tableau = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center py-12 px-4 md:px-12 bg-textLight">
+    <div className="flex flex-col items-center py-12 px-2 sm:px-4 md:px-12 bg-textLight">
       <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2 text-center">
         Chocolate Box Sales Overview
       </h2>
@@ -74,13 +77,13 @@ const Tableau = () => {
       </p>
 
       {/* Responsive flex container to center Tableau dashboard */}
-     <div className="w-full flex justify-center overflow-x-scroll overflow-y-scroll min-h-[400px] min-w-[350px] sm:overflow-x-auto sm:overflow-y-auto">
-  <div
-    ref={containerRef}
-    className="mx-auto"
-    style={{ minWidth: 320, display: "flex", justifyContent: "center" }}
-  />
-</div>
+      <div className="w-full flex justify-center overflow-x-auto">
+        <div
+          ref={containerRef}
+          className="mx-auto"
+          style={{ minWidth: 220, display: "flex", justifyContent: "center" }}
+        />
+      </div>
     </div>
   );
 };
