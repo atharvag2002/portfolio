@@ -1,6 +1,6 @@
 import React from 'react';
 import profile from '../assets/profile.png';
-import '../index.css'; // scroll animation styles
+import '../index.css'; 
 import java from '../assets/icons/java.svg';
 import javascript from '../assets/icons/javascript.svg';
 import vscode from '../assets/icons/vscode.svg';
@@ -74,7 +74,7 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start">
             <a download
-              href={`${process.env.PUBLIC_URL}/mca.pdf`}
+              href={`${process.env.PUBLIC_URL}/Atharva Gaikwad Web.pdf`}
               className="bg-offyellow text-background px-6 py-3 rounded-2xl text-lg font-medium shadow-md hover:scale-105 transition duration-300"
             >
               Download Resume

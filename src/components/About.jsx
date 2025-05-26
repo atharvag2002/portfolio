@@ -33,7 +33,7 @@ const About = () => {
       className="w-28 h-28 rounded-full object-cover mb-4"
     />
     <h4 className="text-xl font-bold mb-1">NES Ramanbaug</h4>
-    <p className="text-gray-600 text-sm">10th Grade (SSC) - 74%<br />Pune</p>
+    <p className="text-gray-600 text-sm">10th Grade (SSC)<br />Pune</p>
   </a>
 
   {/* Jr. College */}
@@ -49,7 +49,7 @@ const About = () => {
       className="w-28 h-28 rounded-full object-cover mb-4"
     />
     <h4 className="text-xl font-bold mb-1">PVG College</h4>
-    <p className="text-gray-600 text-sm">12th Grade (HSC) - 57%<br />Pune</p>
+    <p className="text-gray-600 text-sm">12th Grade (HSC)<br />Pune</p>
   </a>
 
   {/* College */}
