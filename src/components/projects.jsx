@@ -1,7 +1,7 @@
 import React from 'react';
 import PROJECT1 from '../assets/GBUDDY.png';
 import PROJECT2 from '../assets/time.png';
-import PROJECT3 from '../assets/weather.jpg';
+import PROJECT3 from '../assets/keyspeed.png';
 
 const Projects = () => {
   const projectData = [
@@ -23,11 +23,11 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Weather App",
+      title: "KeySpeed-Typing Speed Test",
       img: PROJECT3,
-      desc: "React weather app fetching live data using API integration and clean UI.",
-      link: "https://github.com/atharvag2002/weather",
-      demo: "https://atharvag2002.github.io/weather/"
+      desc: "A React-based typing speed test app that tracks your WPM, storing scores in localStorage.",
+      link: "https://github.com/atharvag2002/keyspeed",
+      demo: "https://atharvag2002.github.io/keyspeed/"
     },
     
     
