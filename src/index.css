@@ -29,7 +29,10 @@ code {
 
 .bulb-flicker {
   animation: flicker 2s infinite;
+
 }
+
+
 
 @keyframes scrollText {
   0% { transform: translateY(0); }
@@ -65,3 +68,17 @@ code {
 html {
   scroll-behavior: smooth;
 }
+
+
+
+/* Existing styles... */
+
+/* Custom torch cursor when blackout is on */
+.torch-cursor {
+  cursor: url('./assets/torch.png'), auto;  /* Fallback to auto if image fails */
+}
+
+/* Optional: Hide default cursor on canvas/spotlight areas if needed */
+.torch-cursor canvas {
+  cursor: none;  /* Hides the cursor over the canvas for a cleaner effect */
+}   

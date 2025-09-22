@@ -4,6 +4,9 @@ import React from 'react';
 import schoolImage from '../assets/ramanbaug.jpg';
 import jrCollegeImage from '../assets/pvg.jpg';
 import collegeImage from '../assets/vcacs.png';
+import simca from '../assets/simca.jpg';
+
+
 
 const About = () => {
   return (
@@ -12,14 +15,14 @@ const About = () => {
         {/* 💬 Brief Intro */}
         <h2 className="text-4xl font-bold text-primary mb-6">About Me</h2>
         <p className="text-lg text-gray-700 leading-relaxed mb-12">
-          Hey! I'm Atharva, a passionate and curious full-stack web developer based in Pune. 
-          I love transforming ideas into responsive, user-friendly websites using modern tech stacks like React, Tailwind, PHP, and Node.js. 
+          Hey! I'm Atharva, a 22-year-old passionate and curious full-stack web developer based in Pune. 
+          I love transforming ideas into responsive, user-friendly websites using modern tech stacks. 
           Apart from coding, I enjoy working out, learning new things, and staying creative.
         </p>
 
         {/* 🎓 Education Timeline */}
         <h3 className="text-3xl font-semibold text-primary mb-10">My Education</h3>
-       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
   {/* School */}
   <a
     href="https://desnesr.edu.in/"
@@ -33,7 +36,7 @@ const About = () => {
       className="w-28 h-28 rounded-full object-cover mb-4"
     />
     <h4 className="text-xl font-bold mb-1">NES Ramanbaug</h4>
-    <p className="text-gray-600 text-sm">10th Grade (SSC)<br />Pune</p>
+    <p className="text-gray-600 text-sm">SSC-2018<br /></p>
   </a>
 
   {/* Jr. College */}
@@ -49,7 +52,7 @@ const About = () => {
       className="w-28 h-28 rounded-full object-cover mb-4"
     />
     <h4 className="text-xl font-bold mb-1">PVG College</h4>
-    <p className="text-gray-600 text-sm">12th Grade (HSC)<br />Pune</p>
+    <p className="text-gray-600 text-sm">HSC-2020<br /></p>
   </a>
 
   {/* College */}
@@ -64,9 +67,27 @@ const About = () => {
       alt="VCACS" 
       className="w-28 h-28 rounded-full object-cover mb-4"
     />
-    <h4 className="text-xl font-bold mb-1">VCACS College</h4>
-    <p className="text-gray-600 text-sm">B.Sc. Computer Science - 8.00 CGPA<br />Pune</p>
+    <h4 className="text-xl font-bold mb-1">VCACS</h4>
+    <p className="text-gray-600 text-sm">BCS-2024<br /></p>
   </a>
+
+  {/* simca */}
+  <a
+    href="http://simca.sinhgad.edu/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300"
+  >
+    <img 
+      src={simca} 
+      alt="SIMCA" 
+      className="w-28 h-28 rounded-full object-cover mb-4"
+    />
+    <h4 className="text-xl font-bold mb-1">SIMCA</h4>
+    <p className="text-gray-600 text-sm">MCA(Pursuing)<br /></p>
+  </a>
+
+
 </div>
       </div>
     </section>

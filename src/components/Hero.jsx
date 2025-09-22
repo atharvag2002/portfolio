@@ -50,7 +50,7 @@ const Hero = () => {
         <div className="mt-8 md:mt-0 text-center md:text-left max-w-xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-offftext leading-tight whitespace-nowrap">
             Hey, I'm{" "}
-            <span className="text-transparent bulb-flicker" style={{ WebkitTextStroke: '1px #fdf6e3' }}>
+            <span className="text-transparent bulb-flicker z-[100]" style={{ WebkitTextStroke: '1px #fdf6e3' }}>
               Atharva
             </span>{" "}
             <span className="waving-hand md:text-5xl text-3xl">👋</span>
@@ -64,7 +64,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10 pointer-events-none"></div>
               {/* 🔁 Scrolling Skills */}
               <ul className="animate-scrollText h-full flex flex-col items-center text-accent font-semibold text-xl sm:text-2xl font-poppins">
-                {["", "Front End Development", "Back End Development", "Data Analytics"].map((item, i) => (
+                {["Software Development", "Data Analytics","User Experience"].map((item, i) => (
                   <li key={i} className="h-10 sm:h-12 flex items-center justify-center tracking-tight">{item}</li>
                 ))}
               </ul>

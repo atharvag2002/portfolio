@@ -43,15 +43,44 @@ const Projects = () => {
 
 
 
-          <div key={project.id} className="bg-white  rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-105 duration-500">
-            <img src={project.img} alt={project.title} className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <h3 className="text-2xl text-primary font-semibold mb-3">{project.title}</h3>
-              <p className="text-black mb-5">{project.desc}</p>
-              <a href={project.demo} target="_blank" rel="noreferrer" className="text-sm bg-primary text-white px-4 py-2 rounded-xl hover:scale-105 transition duration-300 inline-block  ">View Project</a>
-              <a href={project.link} target="_blank" rel="noreferrer" className="text-sm bg-grey-100 text-primary rounded-xl px-7 py-2 hover:scale-95 transition duration-300  border border-black  float-right  inline-block" >  <span>&lt;Code&gt;</span></a>
-            </div>
-          </div>
+      <div 
+  key={project.id} 
+  className="bg-white rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-105 duration-500 flex flex-col"
+>
+  {/* Image */}
+  <img 
+    src={project.img} 
+    alt={project.title} 
+    className="w-full h-48 object-cover" 
+  />
+
+  {/* Card body */}
+  <div className="p-6 flex flex-col flex-1">
+    <h3 className="text-2xl text-primary font-semibold mb-3">{project.title}</h3>
+    <p className="text-black mb-5 flex-1">{project.desc}</p>
+
+    {/* Button row pinned at bottom */}
+    <div className="flex justify-between items-center mt-4">
+      <a 
+        href={project.demo} 
+        target="_blank" 
+        rel="noreferrer" 
+        className="text-sm bg-primary text-white px-4 py-2 rounded-xl hover:scale-105 transition duration-300"
+      >
+        View Project
+      </a>
+      <a 
+        href={project.link} 
+        target="_blank" 
+        rel="noreferrer" 
+        className="text-sm hover:bg-gray-100 text-primary rounded-xl px-7 py-2 hover:scale-95 transition duration-300 border border-black"
+      >
+        <span>&lt;Code&gt;</span>
+      </a>
+    </div>
+  </div>
+</div>
+
         ))}
       </div>
     </section>
