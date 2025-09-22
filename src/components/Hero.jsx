@@ -64,7 +64,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10 pointer-events-none"></div>
               {/* 🔁 Scrolling Skills */}
               <ul className="animate-scrollText h-full flex flex-col items-center text-accent font-semibold text-xl sm:text-2xl font-poppins">
-                {["Software Development", "Data Analytics","User Experience"].map((item, i) => (
+                {["Software Development", "Data Analytics","User Experience", "Cloud"].map((item, i) => (
                   <li key={i} className="h-10 sm:h-12 flex items-center justify-center tracking-tight">{item}</li>
                 ))}
               </ul>
