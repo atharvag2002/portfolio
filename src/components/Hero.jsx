@@ -36,8 +36,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 h-full w-1/5 bg-primary sm:w-1/5 md:w-1/5 lg:w-1/5"></div>
 
       {/* Main Flex Container for profile and text */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-4 pt-20 md:gap-56">
-        {/* Profile Picture */}
+<div className="relative flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-4 pt-20 md:gap-56">        {/* Profile Picture */}
         <div className="flex-shrink-0">
           <img
             src={profile}
@@ -50,9 +49,9 @@ const Hero = () => {
         <div className="mt-8 md:mt-0 text-center md:text-left max-w-xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-offftext leading-tight whitespace-nowrap">
             Hey, I'm{" "}
-            <span className="text-transparent bulb-flicker z-[100]" style={{ WebkitTextStroke: '1px #fdf6e3' }}>
-              Atharva
-            </span>{" "}
+            <span className="relative text-transparent bulb-flicker z-[70]" style={{ WebkitTextStroke: '1px #fdf6e3' }}>
+  Atharva
+</span>{" "}
             <span className="waving-hand md:text-5xl text-3xl">👋</span>
           </h1>
 
