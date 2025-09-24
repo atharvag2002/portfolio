@@ -35,17 +35,14 @@ code {
 
 
 @keyframes scrollText {
-  0% { transform: translateY(0); }
-  20% { transform: translateY(-100%); }
-  40% { transform: translateY(-200%); }
-  60% { transform: translateY(-300%); }
-  80% { transform: translateY(-200%); }
-  100% { transform: translateY(0); }
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-400%); }  /* scroll through 4 items height */
 }
 
 .animate-scrollText {
-  animation: scrollText 10s ease-in-out infinite;
+  animation: scrollText 12s linear infinite;
 }
+
 
 
 @keyframes wave {
