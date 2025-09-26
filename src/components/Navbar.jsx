@@ -52,7 +52,7 @@ const Navbar = ({ onToggleBlackout, isBlackoutOn }) => {  // Receive props
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-[#0a5c36] text-[#f1f5f9] space-y-4 py-4">
+          <div className="md:hidden bg-[#2C3539] text-[#f1f5f9] space-y-4 py-4">
             <a href="#home" className="block text-center">Home</a>
             <a href="#projects" className="block text-center">Projects</a>
             <a href="#skills" className="block text-center">Skills</a>

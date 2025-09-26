@@ -7,15 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1D1D1D",        // grey
-        background: "#581845",     // purple
-        textLight: "#f1f5f9",      // light grey
-        accent: "#facc15",         // yellow 
-        offwhite: "#f1f3f5",       
-        offftext: "#fdf6e3",       // light off-white
-        navyellow: "#2C3539",      // navy grey
-        offyellow: "#b2a89f",      // grey shade of button
-      },
+  primary: "#1D1D1D",      // very dark gray / near black
+  background: "#581845",   // deep purple / maroonish
+  textLight: "#f1f5f9",    // very light gray / almost white
+  accent: "#facc15",       // bright yellow
+  offwhite: "#f1f3f5",     // soft off-white / light gray
+  offftext: "#fdf6e3",     // warm off-white / cream
+  navyellow: "#2C3539",    // dark slate gray / navy gray
+  offyellow: "#b2a89f",    // muted yellowish-brown / warm gray
+},
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
         rajdhani: ['Rajdhani', 'sans-serif'],

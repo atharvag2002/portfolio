@@ -14,7 +14,7 @@ import github from '../assets/icons/github.svg';
 import database from '../assets/icons/database.svg';
 
 
-const Hero = () => {
+const Hero = ({isBlackoutOn}) => {
   return (
     <section id="home" className="relative bg-background text-textLight min-h-screen flex items-center justify-center px-4 sm:px-8 overflow-hidden">
       {/* Background floating icons */}
@@ -49,9 +49,16 @@ const Hero = () => {
         <div className="mt-8 md:mt-0 text-center md:text-left max-w-xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-offftext leading-tight whitespace-nowrap">
             Hey, I'm{" "}
-            <span className="relative text-transparent bulb-flicker z-[70]" style={{ WebkitTextStroke: '1px #fdf6e3' }}>
+          <span
+  className={`relative text-transparent bulb-flicker ${
+    isBlackoutOn ? "z-[70]" : "z-10"
+  }`}
+  style={{ WebkitTextStroke: "1px #fdf6e3" }}
+>
   Atharva
-</span>{" "}
+</span>
+
+{" "}
             <span className="waving-hand md:text-5xl text-3xl">👋</span>
           </h1>
 
@@ -76,16 +83,15 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center md:justify-start">
             <a download
               href={`${process.env.PUBLIC_URL}/Atharva Gaikwad Web.pdf`}
-              className="bg-offyellow text-background px-6 py-3 rounded-2xl text-lg font-medium shadow-md hover:scale-105 transition duration-300"
-            >
+ className="border-2 text-offyellow border-primary px-6 py-3 rounded-2xl text-lg font-medium hover:bg-primary  transition duration-300"            >
               Download Resume
             </a>
-            <a
+            {/* <a
               href="#contact"
               className="border-2 border-primary px-6 py-3 rounded-2xl text-lg font-medium hover:bg-offyellow hover:text-background transition duration-300"
             >
               Contact Me
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

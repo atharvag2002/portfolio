@@ -9,10 +9,11 @@ import Tableau from './components/tableau';
 import SpotlightCursor from './components/SpotlightCursor';
 
 function App() {
-  const [isBlackoutOn, setIsBlackoutOn] = useState(false);  // Start with OFF
+  const [isBlackoutOn, setIsBlackoutOn] = useState(false);  // State for blackout mode
 
-  const toggleBlackout = () => setIsBlackoutOn(!isBlackoutOn);
+  const toggleBlackout = () => setIsBlackoutOn(!isBlackoutOn);  // Toggle handler
 
+  // Torch cursor logic
   useEffect(() => {
     if (isBlackoutOn) {
       document.body.classList.add('torch-cursor');
@@ -27,16 +28,15 @@ function App() {
         onToggleBlackout={toggleBlackout} 
         isBlackoutOn={isBlackoutOn} 
       />
+      <Hero isBlackoutOn={isBlackoutOn} />
 
-      <Hero />
       <Projects />
       <Tableau />
       <Skills />
       <About />
       <Footer />
 
-      {/* Render spotlight only when blackout is active */}
-      {isBlackoutOn && <SpotlightCursor />}
+      {isBlackoutOn && <SpotlightCursor />}  {/* Conditionally render */}
     </div>
   );
 }
