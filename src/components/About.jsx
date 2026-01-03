@@ -41,7 +41,7 @@ const About = () => {
 
   {/* Jr. College */}
   <a
-    href="https://www.punevidyarthigriha.org/contact-us/"
+    href="https://www.punevidyarthigriha.org/"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:scale-105 transition duration-300"
